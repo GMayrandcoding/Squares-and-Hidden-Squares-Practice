@@ -1,6 +1,6 @@
 function getWinMessage(score) {
   if(score < 250) {
-    return "Maybe try that again..."
+    return "Practice more and you will get it next time..."
   }
   else if(score < 500) {
     return "Not bad..."
@@ -18,7 +18,7 @@ function getWinMessage(score) {
     return "You have what it takes!"
   }
   else {
-    return "You are the Slope Master."
+    return "You are the Squares and Hidden Perfect Squares Master."
   }
 }
 
