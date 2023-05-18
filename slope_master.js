@@ -11,7 +11,7 @@ const inputState = {
 }
 
 const ASSET_MANIFEST = [
-  { src:"Button_SM.png", id:"playButton", crossOrigin:true},
+  { src:"Button_SM.png", id:"practiceButton", crossOrigin:true},
   { src:"Background_SM.jpg", id:"background", crossOrigin:true},
   { src:"Background_SM2.png", id:"backgroundDimmed", crossOrigin:true},
   { src:"Title_SM.png", id:"title", crossOrigin:true},
@@ -26,8 +26,8 @@ const ASSET_MANIFEST = [
   { src:"timer_beep.wav", id:"timer_beepSFX", crossOrigin:true}
 ];
 
-const PLAY_BUTTON_LOCATION_X_PROPORTION = 0.5;
-const PLAY_BUTTON_LOCATION_Y_PROPORTION = 0.76;
+const PRACTICE_BUTTON_LOCATION_X_PROPORTION = 0.5;
+const PRACTICE_BUTTON_LOCATION_Y_PROPORTION = 0.76;
 const TITLE_LOCATION_X_PROPORTION = 0.55;
 const TITLE_LOCATION_Y_PROPORTION = 0.36;
 const GRID_WIDTH = 350;
@@ -44,7 +44,7 @@ const FIRST_INSTRUCTION = "Plot the Y intercept"
 const FONT_FAMILY_EQUATION = "'Be Vietnam Pro', sans-serif"
 const FONT_FAMILY_GAME = "'Press Start 2P', cursive"
 
-class SlopeMaster {
+class squaresAndHiddenPerfectSquares; {
   constructor(width, height, stage) {
     this.width = width
     this.height = height
@@ -117,7 +117,7 @@ class SlopeMaster {
       this.handlePlayButtonClick();
     }.bind(this));
 
-    var text = createLabel(stage, "Made for Cavelero Mid High School by Mr. Austria", 9, "#ff66ff", this.width * 0.5, 490, "center", FONT_FAMILY_GAME);
+    var text = createLabel(stage, "Made for Cavelero Mid High School by Gordon Mayrand", 9, "#ff66ff", this.width * 0.5, 490, "center", FONT_FAMILY_GAME);
 
     createjs.Sound.play("loadedSFX");
   }
