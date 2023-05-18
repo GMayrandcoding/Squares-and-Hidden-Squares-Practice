@@ -21,15 +21,15 @@ var Game = function (pCanvasID) {
     this.resize();
 
     addEventListener("assetsLoaded", function(e) {
-      this.slopeMaster.showTitle()
+      this.squaresAndHiddenPerfectSquares.showTitle()
     }.bind(this))
 
     this.init()
 };
 
 Game.prototype.init = function() {
-  this.slopeMaster = new SlopeMaster(this.STAGE_WIDTH, this.STAGE_HEIGHT, this.stage);
-  this.slopeMaster.init()
+  this.squaresAndHiddenPerfectSquares = new squaresAndHiddenPerfectSquares(this.STAGE_WIDTH, this.STAGE_HEIGHT, this.stage);
+  this.squaresAndHiddenPerfectSquares.init()
 }
 
 Game.prototype.update = function (pEvent) {
@@ -37,8 +37,8 @@ Game.prototype.update = function (pEvent) {
         this.resize();
     }
 
-    if (this.slopeMaster) {
-      this.slopeMaster.update();
+    if (this.squaresAndHiddenPerfectSquares) {
+      this.squaresAndHiddenPerfectSquares.update();
     }
 
     this.stage.update();
